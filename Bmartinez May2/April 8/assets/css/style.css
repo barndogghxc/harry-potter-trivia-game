@@ -1,0 +1,259 @@
+body {
+	background: url("../images/3045240-poster-p-1-sell-weed-without-breaking-the-law.jpg");
+	font-size: 18px;
+	line-height: 34px;
+	font-family:'New Rocker', cursive;
+	color: #777;
+
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*general*/
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	height:10%;
+	margin: 0 auto;
+	clear: both;
+}
+h1, 
+h2,
+h3,
+p {
+	margin-bottom: 20px;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+h1, h2, h3 {
+	font-family: 'New Rocker', cursive;
+	font-weight: 700;
+	color: #7ABA71;
+}
+h1 {
+	font-size: 30px;
+	line-height: 49px;
+	border-bottom: 3px solid #ddd;
+	padding-bottom: 20px;
+}
+h2,
+h3 {
+	font-size: 22px;
+}
+
+/*header*/
+
+#masthead {
+	background: #d3d3d3;
+	margin: 0 0 30px;
+	z-index: 99;
+	color: #d3d3d3;
+	overflow: hidden;
+	border-bottom: 2px solid #ccc;
+	position: sticky;
+	width: 100%;
+	height: 12%;
+}
+#logo {
+	width: 250px;
+	height: 90px;
+	background: #7ABA71;
+	float: left;
+	font-family: 'New Rocker', cursive;
+	text-align: center;
+	line-height: 90px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 30px;
+	text-decoration: none;
+}
+nav {
+	float: right;
+	margin-top: 25px;
+}
+nav a {
+	color: #999;
+	text-decoration: none;
+	margin-left: 15px;
+	display: inline-block;
+	border-left: 1px solid #efefef;
+	padding-left: 15px;
+	line-height: 18px;
+}
+nav a:first-child {
+	border-left: 0 none;
+}
+
+/*footer*/
+
+footer {
+	background: #666;
+	color: #fff;
+	padding: 30px 0;
+	clear: both;
+	border-top: 8px solid #7ABA71;
+	color: #ccc;
+	font-size: 12px;
+	text-align: center;
+}
+
+/*sidebar*/
+
+.sidebar {
+	background: #d3d3d3;
+	padding: 30px;
+	width: 50%;
+	max-width: 270px;
+	float: right;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+h3,
+.sidebar h2 {
+	/*border-bottom: 2px solid #eee;*/
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+	line-height: 22px;
+}
+.social {
+	width: 20%;
+	height: 40px;
+	margin-top: 8px;
+	margin-right: 5px;
+	display: inline;
+}
+.social:last-child {
+	margin-right: 0;
+}
+
+/*main*/
+
+#main-container {
+	padding-top: 20px;
+
+}
+.main-section {
+	padding: 30px;
+	margin: 0 0 40px 0;
+	width: 100%;
+	max-width: 650px;
+	float: left;
+	border: 1px solid #ddd;
+	background: #d3d3d3;
+}
+
+/*enjoy page*/
+
+.work {
+	width: 274px;
+	overflow: auto;
+	position: relative;
+	float: left;
+	margin: 20px 0 25px;
+}
+.work:nth-child(even) {
+	margin-right: 40px;
+}
+.work img {
+	width: 100%;
+	border: 0 none;
+	opacity: .8;
+}
+.work h3 {
+	border-bottom: 0;
+	background: #7ABA71;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	padding: 5px;
+	width: 100%;
+	bottom: 20px;
+	line-height: 10px;
+	margin-bottom: 0;
+	font-weight: 300;
+}
+.auth-image {
+	width: 200px;
+	height: auto;
+	margin-top: 10px;
+	float: left;
+	margin-right: 25px;
+}
+
+/*contact page*/
+
+#contact-form ul {
+	margin-bottom: 20px;
+}
+#contact-form li {
+	margin-bottom: 10px;
+}
+label,
+input[type=text],
+input[type=email],
+textarea {
+	display: block;
+	width: 100%;
+}
+input[type=text],
+input[type=email],
+textarea {
+	height: 35px;
+	border: 1px solid #ddd;
+	padding: 0 10px;
+	font-size: 14px;
+}
+textarea {
+	height: 200px;
+}
+input[type=submit] {
+	background: #d3d3d3;
+	border: 0 none;
+	color: #7ABA71;
+	font-size: 18px;
+	padding: 10px 30px;
+	cursor: pointer;
+}
+@media only screen and (min-width : 285px) and (max-width : 480px) {
+	.wrapper {
+		width: 100%;
+		padding: 20px;
+	}
+	#main-content,
+	#sidebar {
+		width: 50%;
+	}
+	#sidebar {
+		margin-top: 40px;
+	}
+}
+@media only screen and (min-width : 481px) and (max-width : 1024px) {
+	#sidebar {
+		display: none;
+	}
+	#main-content  {
+		float: none;
+	}
+	#mobile-content {
+		display: block;
+		width: 100%;
+		margin-top: 40px;
+	}
+}
+@media only screen and (min-width:1025px) {
+	.wrapper {
+		width: 100%;
+		padding: 20px;
+	}
+	#main-content,
+	#sidebar {
+		width: 100%;
+	}
+	#sidebar {
+		margin-top: 40px;
+	}
+}

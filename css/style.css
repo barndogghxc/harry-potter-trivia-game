@@ -1,0 +1,52 @@
+body {
+    background-image: url(../img/hpCharacters.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+}
+
+
+
+h1 {
+    color: white;
+    text-align: center;
+    
+
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    
+
+}
+
+#main-content {
+ width: 60%;
+ padding: auto;
+ border: 1px solid #E066FF;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top:15%;
+ background-color: #BDBDBD;
+
+}
+
+#formTest {
+    color: #E066FF;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: auto;
+
+
+
+}
+
+#test {
+    color: #E066FF;
+    text-align: center;
+
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- H5FormValidation.html -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Feedback Form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+ 
+<body>
+  <h2>Harry Potter Quiz Login</h2>
+ 
+  <form id="formTest" method="get" action="documents-export-2016-05-02/processData">
+    <table width="800px" align="center">
+    <tr>
+      <td><label for="txtName">Name:<span class="required"></span></label></td>
+      <td><input type="text" id="txtName" name="name" required autofocus></td>
+    </tr>
+    <tr>
+      <td><label for="txtEmail">Email:</label></td>
+      <td><input type="text" id="txtEmail" name="address"></td>
+    </tr>
+    <tr>
+      <td>Which Hogwarts house would you want to be in?:<span class="required"></span></td>
+      <td><label><input type="checkbox" name="house" value="a" checked>Hufflepuff</label>
+          <br><label><input type="checkbox" name="house" value="s">Slytherin</label>
+          <br><label><input type="checkbox" name="house" value="h">Gryffindor</label>
+          <br><label><input type="checkbox" name="house" value="b">Ravenclaw</label></td>
+          
+    </tr>
+    <tr>
+      <td>Whats your favorite HP book?<span class="required"></span></td>
+           <td> <label><input type="radio" name="book" value="stone" checked>The Philosopher's Stone </label>
+            <br><label><input type="radio" name="book" value="secrets">The Chamber of Secrets </label>
+            <br><label><input type="radio" name="book" value="azkaban">The Prisoner of Azkaban </label>
+            <br><label><input type="radio" name="book" value="fire">The Goblet of Fire </label>
+            <br><label><input type="radio" name="book" value="phoenix">The Order of the Phoenix</label>
+            <br><label><input type="radio" name="book" value="prince">The Half-Blood Prince</label>
+            <br><label><input type="radio" name="book" value="hallows">The Deathly Hallows</label></td>
+    </tr>
+
+    <tr>
+      <td><label for="txtComments">Further Comments:</label></td>
+      <td>
+
+    <textarea name="comments" cols="20" rows="4"></textarea></td>
+
+    </tr>
+  
+
+    
+    </table>
+    <button type="button"
+  onClick="document.getElementById('clickhere').innerHTML = Date()">
+  Click me to start the quiz!</button>
+
+
+  <p id="clickhere"></p>
+  </form>
+</body>
+</html>

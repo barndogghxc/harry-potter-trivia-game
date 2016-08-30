@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- H5FormValidation.html -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Feedback Form</title>
+</head>
+ 
+<body>
+  <h2>My Feedback Form</h2>
+ 
+  <form id="formTest" method="get" action="documents-export-2016-05-02/processData">
+    <table width="800px" align="center">
+    <tr>
+      <td><label for="txtName">Name:<span class="required"></span></label></td>
+      <td><input type="text" id="txtName" name="name" required autofocus></td>
+    </tr>
+    <tr>
+      <td><label for="txtEmail">Email:</label></td>
+      <td><input type="text" id="txtEmail" name="address"></td>
+    </tr>
+    <tr>
+      <td><label for="txtPassword">Password:<span class="required"></span></label></td>
+      <td><input type="password" id="txtPassword" name="password"></td>
+    </tr>
+    <tr>
+      <td>Please check all the emotions that apply to you:<span class="required"></span></td>
+      <td><label><input type="checkbox" name="emotion" value="a" checked>Angry</label>
+          <br><label><input type="checkbox" name="emotion" value="b">Sad</label>
+          
+          <br><label><input type="checkbox" name="emotion" value="c">Happy</label>
+          <br><label><input type="checkbox" name="emotion" value="d">Ambivalent</label></td>
+        
+    </tr>
+    <tr>
+      <td>How satisfied were you with our service?<span class="required"></span></td>
+            <td><label><input type="radio" name="satisfaction" value="verySatisfied" checked>Very satisfied</label>
+            <br><label><input type="radio" name="satisfaction" value="satisfied">Satisfied</label>
+            <br><label><input type="radio" name="satisfaction" value="didntCare">Didn't care</label>
+            <br><label><input type="radio" name="satisfaction" value="dissatisfied">Dissatisfied</label>
+            <br><label><input type="radio" name="satisfaction" value=="veryDissatisfied">Very Dissatisfied</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="txtComments">Further comments:<span class="required"></span></label></td>
+
+      <td><label><textarea name="comments" cols="20" rows="4"></textarea></label></td>
+
+    </tr>
+
+    <tr>
+        <td>Bio photo:<span class="required"></span></td>
+        <td><input type="text" id="txtPhoto" name="photo"></td>
+        <td><input type="file" name="photo"></td>
+    </tr>
+
+    <tr>
+      <td>Location visited:<span class="required"></span></td>
+      <td><select id="selLocation" name="location" required>
+            <option value="" selected>Select location</option>
+            <option value="AA">AA</option>
+            <option value="BB">BB</option>
+            <option value="CC">CC</option>
+          </select></td>
+    </tr>
+
+    <tr>
+      <td>
+      <input type="submit" name="submit" value="submit"></td>
+    </tr>
+
+    
+    </table>
+  </form>
+</body>
+</html>
